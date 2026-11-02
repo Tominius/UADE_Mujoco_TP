@@ -1,0 +1,11 @@
+# Copy to local_paths.yaml and fill in paths (gitignored).
+gvhmr_repo: /home/you/Projects/humanoid_stack/GVHMR
+gmr_repo: /home/you/Projects/humanoid_stack/GMR
+gvhmr_env: gvhmr
+gmr_env: gmr
+gvhmr_python: python
+gmr_python: python
+robot_name: unitree_g1
+use_static_camera: true
+# Optional: UI status / artifact root override
+artifacts_root: /home/you/Projects/kimodo_mujoco/gvhmr_gmr/artifacts
