@@ -11,10 +11,10 @@ import mujoco
 import mujoco.viewer
 import numpy as np
 
-# Modelo de Menagerie (muy estable y optimizado)
-MODEL_PATH = Path(__file__).resolve().parent / "mujoco_menagerie" / "unitree_go2" / "scene.xml"
+# Modelo del Unitree Go2
+MODEL_PATH = Path(__file__).resolve().parent / "models" / "unitree_go2" / "scene.xml"
 if not MODEL_PATH.exists():
-    MODEL_PATH = Path(__file__).resolve().parent / "unitree_mujoco" / "unitree_robots" / "go2" / "scene.xml"
+    MODEL_PATH = Path(__file__).resolve().parent / "mujoco_menagerie" / "unitree_go2" / "scene.xml"
 
 def main():
     print(f"Cargando modelo Go2 desde {MODEL_PATH}...")

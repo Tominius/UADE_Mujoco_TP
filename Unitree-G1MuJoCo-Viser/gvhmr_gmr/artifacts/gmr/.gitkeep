@@ -1,2 +1,0 @@
-# Place GMR retarget outputs here, e.g. demo_g1.pkl from:
-# python scripts/gvhmr_to_robot.py --gvhmr_pred_file ... --robot unitree_g1 --save_path artifacts/gmr/demo_g1.pkl

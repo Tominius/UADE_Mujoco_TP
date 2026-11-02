@@ -17,9 +17,9 @@ import mujoco
 import mujoco.viewer
 import numpy as np
 
-MODEL_PATH = Path(__file__).resolve().parent / "mujoco_menagerie" / "unitree_go2" / "scene.xml"
+MODEL_PATH = Path(__file__).resolve().parent / "models" / "unitree_go2" / "scene.xml"
 if not MODEL_PATH.exists():
-    MODEL_PATH = Path(__file__).resolve().parent / "unitree_mujoco" / "unitree_robots" / "go2" / "scene.xml"
+    MODEL_PATH = Path(__file__).resolve().parent / "mujoco_menagerie" / "unitree_go2" / "scene.xml"
 
 def lerp(a, b, t):
     t = max(0.0, min(1.0, t))

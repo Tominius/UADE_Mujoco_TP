@@ -16,7 +16,9 @@ import mujoco.viewer
 import numpy as np
 import onnxruntime as ort
 
-CHALLENGE_DIR = Path(__file__).resolve().parent / "g1-manipulation-challenge"
+CHALLENGE_DIR = Path(__file__).resolve().parent / "models" / "unitree_g1"
+if not CHALLENGE_DIR.exists():
+    CHALLENGE_DIR = Path(__file__).resolve().parent / "g1-manipulation-challenge"
 
 class ONNXPolicy:
     def __init__(self, path):
